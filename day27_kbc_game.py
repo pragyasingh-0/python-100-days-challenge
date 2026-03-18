@@ -1,22 +1,35 @@
 # 🚀 Day 27 of #100DaysOfPython 🐍
 
-questions = [
-    ["Who is PM of India?", "A. Modi", "B. Rahul", "C. Kejriwal", "D. None", "A"],
-    ["2 + 2 = ?", "A. 3", "B. 4", "C. 5", "D. 6", "B"]
+ questions = [
+    "1. What is the capital of India?",
+    "2. Who is the father of Python?",
+    "3. Which number is even?"
 ]
+
+options = [
+    ["A. Delhi", "B. Mumbai", "C. Chennai", "D. Kolkata"],
+    ["A. Dennis Ritchie", "B. Guido van Rossum", "C. Elon Musk", "D. Bill Gates"],
+    ["A. 3", "B. 7", "C. 10", "D. 9"]
+]
+
+answers = ["A", "B", "C"]
+prize = [1000, 2000, 5000]
 
 money = 0
 
-for q in questions:
-    print(q[0])
-    print(q[1], q[2], q[3], q[4])
-
-    ans = input("Enter your answer: ")
-
-    if ans == q[5]:
-        money += 1000
-        print("Correct Answer! Money:", money)
+for i in range(len(questions)):
+    print(questions[i])
+    
+    for opt in options[i]:
+        print(opt)
+    
+    user = input("Enter your answer (A/B/C/D): ").upper()
+    
+    if user == answers[i]:
+        money = prize[i]
+        print("Correct! You won ₹", money)
     else:
-        print("Wrong Answer! Game Over")
+        print("Wrong answer!")
         break
 
+print("Game Over! Your total winning is ₹", money)
