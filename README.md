@@ -45,10 +45,28 @@ a = 10
 b = 5
 print(f"Sum of {a} and {b} is {a + b}")
 
-🧠 Output
+🧠 Output 
 
 My name is Taylor and I am 20 years old.
 Sum of 10 and 5 is 15
 
 ✨ f-strings make Python code simpler, faster, and more readable.
 
+
+
+
+🚀 Day 29 of #100DaysOfPython 🐍
+
+Today I learned about writing clean and readable Python code, which is just as important as making the code work.
+
+📚 Topics covered:
+🔹 Docstrings – Used to document functions and make code easier to understand
+🔹 PEP 8 – The official style guide for writing clean and consistent Python code
+🔹 Zen of Python – A collection of guiding principles that emphasize simplicity, readability, and clarity in programming
+
+💡 One of my favorite lines from the Zen of Python:
+“Simple is better than complex.”
+
+These concepts helped me understand that good programming is not just about solving problems, but also about writing code that others (and future me) can easily read and maintain.
+ 
+ 
