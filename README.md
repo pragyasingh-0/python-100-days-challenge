@@ -2,6 +2,9 @@
 A collection of my daily Python practice, including concepts, exercises, and small projects as part of the 100 Days of Python challenge.
 
 
+
+
+
 🚀 Day 27 of #100DaysOfPython 🐍
 
 Today I built a KBC (Kaun Banega Crorepati) Game in Python 🎮
@@ -17,6 +20,8 @@ This was one of the most exciting exercises so far where I created a quiz system
 
 This exercise helped me understand how to build interactive programs and game logic using Python. 
 
+
+-----
 
 
 🚀 Day 28 of #100DaysOfPython 🐍
@@ -53,6 +58,7 @@ Sum of 10 and 5 is 15
 ✨ f-strings make Python code simpler, faster, and more readable.
 
 
+------
 
 
 🚀 Day 29 of #100DaysOfPython 🐍
@@ -68,5 +74,84 @@ Today I learned about writing clean and readable Python code, which is just as i
 “Simple is better than complex.”
 
 These concepts helped me understand that good programming is not just about solving problems, but also about writing code that others (and future me) can easily read and maintain.
- 
- 
+
+
+------
+
+
+🚀 Day 30 – Recursion in Python
+
+On Day 30 of my Python learning journey, I explored recursion, a programming technique where a function calls itself to solve a problem. Recursion is especially useful for problems that can be broken down into smaller, similar subproblems.
+
+
+🧠 What I Learned
+
+What recursion is and how it works
+
+Base case and recursive case
+
+How recursion stops to prevent infinite calls
+
+Simple examples like factorial and Fibonacci series
+
+
+
+---
+
+🔁 What is Recursion?
+
+Recursion is when a function calls itself repeatedly until a stopping condition (base case) is met.
+
+def example():
+    example()  # function calling itself
+
+Without a base case, recursion would run forever and cause an error.
+
+
+---
+
+🧮 Example 1: Factorial Using Recursion
+
+def factorial(n):
+    if n == 0 or n == 1:   # base case
+        return 1
+    return n * factorial(n - 1)  # recursive call
+
+print(factorial(5))
+
+Output:
+
+120
+
+
+---
+
+🔢 Example 2: Fibonacci Series Using Recursion
+
+def fibonacci(n):
+    if n <= 1:  # base case
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+print(fibonacci(6))
+
+Output:
+
+8
+
+
+⚙️ Key Concepts
+
+Base Case: Stops the recursion
+
+Recursive Case: Function calling itself
+
+Stack Memory: Each recursive call is stored in memory until the base case is reached
+
+
+
+---
+
+📂 Files in This Folder
+
+recursion.py – Contains basic recursion examples like factorial and Fibonacci
